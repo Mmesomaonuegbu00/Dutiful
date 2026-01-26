@@ -3,7 +3,7 @@ import React from 'react'
 
 const Discover = () => {
     return (
-        <div className='w-full pt-[8vh] md:pt-[12vh] pb-[2vh] h-full'>
+        <div className='w-full pt-[6vh] md:pt-[12vh] pb-[2vh] h-full'>
             <div className='flex justify-center flex-col xl:w-[75%] w-[90%] h-full mx-auto bg-[#FCFAFF] lg:p-6'>
                 <div className='grid grid-cols-1 lg:grid-cols-2 items-center lg:gap-14'>
                     <div className='hidden xl:flex xl:justify-center w-[85%] h-87.5 relative bg-[#532F82] mt-20 ml-10 mb-20 rounded-2xl'>

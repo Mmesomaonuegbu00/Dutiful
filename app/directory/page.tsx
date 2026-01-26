@@ -28,7 +28,7 @@ const BusinessDirectory = () => {
 
   return (
     <div className="font-navbar min-h-screen relative">
-      <div className="w-full bg-[#532F82] h-[30vh] flex items-center">
+      <div className="w-full bg-[#532F82] lg:h-[30vh] flex items-center">
         <div className="flex flex-col items-center text-center xl:w-[75%] w-[90%] mx-auto text-white pt-28 md:pt-[12vh] pb-[5vh]">
           <h1 className="text-2xl md:text-3xl font-semibold mb-2">Get in touch</h1>
           <p className="text-sm md:text-base">
@@ -37,7 +37,7 @@ const BusinessDirectory = () => {
         </div>
       </div>
 
-      <div className="mt-12 md:mt-0 md:absolute md:top-[25vh] md:left-1/2 md:-translate-x-1/2 w-full">
+      <div className="mt-12 md:mt-0 md:absolute lg:top-[25vh] md:left-1/2 md:-translate-x-1/2 w-full">
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 xl:w-[70%] w-[90%] mx-auto">
           {infoCards.map((card) => (
             <InfoCard
@@ -56,7 +56,7 @@ const BusinessDirectory = () => {
         </div>
       </div>
 
-      <div className="pt-[3vh] md:pt-[12vh]">
+      <div className="pt-[3vh] xl:pt-[12vh]">
         <ContactForm />
       </div>
     </div>
