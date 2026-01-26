@@ -3,9 +3,9 @@ import React from 'react'
 
 const Appoint = () => {
   return (
-    <div className="w-full  xl:pt-[12vh] pb-[2vh] lg:pb-[20vh]">
+    <div className="w-full pt-4 xl:pt-[12vh] pb-[2vh] lg:pb-[6vh]">
       <div className="flex justify-center flex-col w-[90%] sm:w-[80%] h-full mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-2 items-center md:gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 items-center md:gap-12">
 
           
           <div className="flex sm:flex-row flex-col items-center">
