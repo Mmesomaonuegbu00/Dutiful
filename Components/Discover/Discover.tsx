@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import Image from 'next/image'
 import React from 'react'
 
@@ -18,26 +19,30 @@ const Discover = () => {
 
                     <div className='flex flex-col justify-center items-stretch space-y-6 px-4 sm:px-6 lg:px-0 py-6 lg:py-0'>
 
-                        <div className="bg-white rounded-2xl p-4 w-full xl:max-w-xl border border-[#EEEEFF] shadow-2xs shadow-gray-100">
-                            <h5 className="font-medium">Get Discovered</h5>
-                            <p className='text-gray-600 text-sm p-2 xl:max-w-112.5'>
-                                Dutiful is more than just a business directory; it also enhances your web profile. The platform makes use of SEo techniques to boost each listing&apos;s performance in the SERPs, providing any business the chance to rank, regardless of how strong their current presence is.
+                        <div className="bg-white rounded-2xl p-4 w-full xl:max-w-xl border border-[#EEEEFF] shadow-2xs shadow-gray-100 relative">
+                            <img src="/discover1.png" alt="" className="absolute top-4 left-4 w-auto h-6" />
+                            <h5 className="font-medium mt-6">Get Discovered</h5>
+                            <p className="text-gray-600 text-sm p-2 xl:max-w-112.5">
+                                Dutiful is more than just a business directory; it also enhances your web profile. The platform makes use of SEO techniques to boost each listing&apos;s performance in the SERPs, providing any business the chance to rank, regardless of how strong their current presence is.
                             </p>
                         </div>
 
                         <div className="bg-white rounded-2xl p-4 w-full xl:max-w-2xl border border-[#EEEEFF] shadow-2xs shadow-gray-100 relative xl:right-60 z-10">
-                            <h5 className="font-medium">Instant chat</h5>
-                            <p className='text-gray-600 text-sm p-2 max-w-112.5'>
-                                You&#39;ll be able to chat and send voice recordings with pontential and existing customers,including managing your captured leads anytime,anywhere via the platform.
+                            <img src="/messages.png" alt="" className="absolute top-4 left-4 w-auto h-6" />
+                            <h5 className="font-medium mt-6">Instant chat</h5>
+                            <p className="text-gray-600 text-sm p-2 max-w-112.5">
+                                You&#39;ll be able to chat and send voice recordings with potential and existing customers, including managing your captured leads anytime, anywhere via the platform.
                             </p>
                         </div>
 
-                        <div className="bg-white rounded-2xl p-4 w-full xl:max-w-2xl border border-[#EEEEFF] shadow-2xs shadow-gray-100">
-                            <h5 className="font-medium">Quotations</h5>
-                            <p className='text-gray-600 text-sm p-2 max-w-112.5'>
-                                InIn addition to providing customers with access to information, offering customer quotations is very advantageous to the way you conduct your business. On Dutiful, you’ll be able to send and receive quotation from customers - an important step in lead management.
+                        <div className="bg-white rounded-2xl p-4 w-full xl:max-w-2xl border border-[#EEEEFF] shadow-2xs shadow-gray-100 relative">
+                            <img src="/note-2.png" alt="" className="absolute top-4 left-4 w-auto h-6" />
+                            <h5 className="font-medium mt-6">Quotations</h5>
+                            <p className="text-gray-600 text-sm p-2 max-w-112.5">
+                                In addition to providing customers with access to information, offering customer quotations is very advantageous to the way you conduct your business. On Dutiful, you’ll be able to send and receive quotations from customers an important step in lead management.
                             </p>
                         </div>
+
 
                     </div>
 

@@ -22,7 +22,7 @@ const ContactForm = () => {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="max-w-2xl mx-auto p-16 flex flex-col gap-6">
+    <form onSubmit={handleSubmit} className="max-w-3xl mx-auto p-16 flex flex-col gap-6">
 
       
       <div className="flex flex-col">

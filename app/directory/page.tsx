@@ -37,8 +37,8 @@ const BusinessDirectory = () => {
         </div>
       </div>
 
-      <div className="mt-12 md:mt-0 md:absolute top-[18vh] lg:top-[25vh] md:left-1/2 md:-translate-x-1/2 w-full">
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 xl:w-[70%] w-[90%] mx-auto">
+      <div className="mt-12 md:mt-0 lg:absolute  top-[18vh] lg:top-[25vh] lg:left-1/2 lg:-translate-x-1/2 w-full">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 xl:w-[70%] w-[90%] mx-auto mt-6 lg:mt-0">
           {infoCards.map((card) => (
             <InfoCard
               key={card.id}

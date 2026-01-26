@@ -11,7 +11,7 @@ interface ConfirmationPageProps {
 
 const ConfirmationPage = ({
   email = 'segunsolaru@gmail.com',
-  imageSrc,
+  imageSrc = '/comfirm.svg'
 }: ConfirmationPageProps) => {
   return (
     <div className="min-h-screen  px-6 pt-[20vh] font-navbar">
@@ -19,16 +19,22 @@ const ConfirmationPage = ({
 
         <div className="w-24 h-24 mx-auto mb-6 rounded-full bg-[#F8F3FF] flex items-center justify-center overflow-hidden">
           {imageSrc ? (
-            <Image src={imageSrc} alt="Confirmation" className="w-full h-full object-cover" width={96} height={96} />
+            <Image
+              src={imageSrc}
+              alt="Confirmation"
+              width={96}
+              height={96}
+              className="w-auto h-12 object-contain"
+            />
           ) : (
             <span className="text-[#603F8B] font-bold">IMG</span>
           )}
         </div>
 
-       
+
 
         <p className="text-sm text-gray-500 mb-8">
-           An OTP code has been sent to {email}. Check your email to get the code.
+          An OTP code has been sent to {email}. Check your email to get the code.
         </p>
 
         <Link href="/otp-verification">
