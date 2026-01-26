@@ -135,8 +135,8 @@ const PricingPage = () => {
         <div className="bg-gray-50 py-16 px-6 font-navbar">
             <div className='xl:w-[75%] w-[90%] mx-auto pt-[10vh]'>
                 <div className='mb-6 max-w-2xl mx-auto text-center space-y-4'>
-                    <h2 className="text-3xl font-semibold text-center text-gray-800">Plans to Suit Your Business Budget</h2>
-                    <p>Our fully organized plans deliver valuable content that showcases your services and skills, drives Lead, covers all features, and gives customers a clear idea to be able to choose your services.</p>
+                    <h2 className="text-2xl md:text-3xl font-semibold text-center text-gray-800">Plans to Suit Your Business Budget</h2>
+                    <p className=''>Our fully organized plans deliver valuable content that showcases your services and skills, drives Lead, covers all features, and gives customers a clear idea to be able to choose your services.</p>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8  mx-auto pt-[5vh]">
                     {cardPlans.map((plan, idx) => (

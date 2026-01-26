@@ -8,7 +8,7 @@ const SignUpForm = () => {
     const [accountType, setAccountType] = useState<'user' | 'provider'>('user')
 
     return (
-        <div className="min-h-screen  px-6 pt-[20vh] mb-20 font-navbar">
+        <div className="min-h-screen  px-6 pt-[16vh] md:pt-[20vh] mb-20 font-navbar">
             <div className="max-w-md mx-auto">
                 <p className="text-sm text-[#603F8B] font-medium mb-2">
                     Sign up free

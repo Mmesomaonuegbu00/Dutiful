@@ -1,6 +1,6 @@
+/* eslint-disable @next/next/no-img-element */
 import ContactForm from '@/Components/ContactForm'
 import InfoCard from '@/Components/DirectoryCard'
-import Image from 'next/image'
 import React from 'react'
 
 const BusinessDirectory = () => {
@@ -27,17 +27,17 @@ const BusinessDirectory = () => {
   ]
 
   return (
-    <div className="font-navbar min-h-screen">
+    <div className="font-navbar min-h-screen relative">
       <div className="w-full bg-[#532F82] h-[30vh] flex items-center">
-        <div className="flex flex-col items-center text-center xl:w-[75%] w-[90%] mx-auto text-white pt-[10vh] pb-[5vh]">
-          <h1 className="text-3xl font-semibold mb-2">Get in touch</h1>
+        <div className="flex flex-col items-center text-center xl:w-[75%] w-[90%] mx-auto text-white pt-28 md:pt-[12vh] pb-[5vh]">
+          <h1 className="text-2xl md:text-3xl font-semibold mb-2">Get in touch</h1>
           <p className="text-sm md:text-base">
             We are here to support you throughout the process of getting your business listed
           </p>
         </div>
       </div>
 
-      <div className="absolute top-56 left-1/2 -translate-x-1/2 w-full">
+      <div className="mt-12 md:mt-0 md:absolute md:top-[25vh] md:left-1/2 md:-translate-x-1/2 w-full">
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 xl:w-[70%] w-[90%] mx-auto">
           {infoCards.map((card) => (
             <InfoCard
@@ -45,11 +45,10 @@ const BusinessDirectory = () => {
               title={card.title}
               desc={card.desc}
               icon={
-                <Image
+                <img
                   src={card.icon}
                   alt={card.title}
-                  width={40}
-                  height={40}
+                  className="w-10 h-10"
                 />
               }
             />
@@ -57,7 +56,7 @@ const BusinessDirectory = () => {
         </div>
       </div>
 
-      <div className="pt-10">
+      <div className="pt-[3vh] md:pt-[12vh]">
         <ContactForm />
       </div>
     </div>
