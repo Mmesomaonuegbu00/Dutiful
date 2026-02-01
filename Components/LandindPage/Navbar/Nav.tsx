@@ -19,20 +19,19 @@ const Nav = () => {
     const [open, setOpen] = useState(false)
 
     return (
-        <div className="bg-white fixed top-0 z-50 w-full h-20">
-            <div className="xl:w-[75%] w-[90%] mx-auto flex items-center justify-between h-full font-navbar">
-
+        <header className="fixed top-0 z-50 w-full bg-white h-22.5">
+            <div className="max-w-360 w-full mx-auto px-6 flex items-center justify-between h-full ">
                 <Link href="/" className="flex items-center">
                     <Image
                         src="/logo.png"
                         alt="Logo"
                         width={80}
-                        height={40}
-                        className="h-10 w-auto object-contain cursor-pointer"
+                        height={45}
+                        className="max-w-22.5 w-full h-auto object-contain"
                     />
                 </Link>
 
-                <div className="hidden lg:flex items-center gap-4">
+                <nav className="hidden xl:flex items-center gap-2.5">
                     {navLinks.map((link) => (
                         <NavItem
                             key={link.href}
@@ -41,19 +40,19 @@ const Nav = () => {
                             icon={link.icon as 'search' | undefined}
                         />
                     ))}
-                </div>
+                </nav>
 
-                <div className="hidden lg:flex items-center gap-4">
+                <div className="hidden xl:flex items-center gap-2.5">
                     <Link
                         href="/login"
-                        className="h-9 flex items-center px-4 border border-gray-300 rounded-md text-gray-600 hover:text-[#532F82] hover:border-[#532F82]"
+                        className="px-13 h-12 flex items-center justify-center text-[20px] text-[#1E1E4B]"
                     >
                         Login
                     </Link>
 
                     <Link
                         href="/signup"
-                        className="h-9 flex items-center px-4 border border-[#532F82] rounded-md text-[#532F82]"
+                        className="px-13 h-12 flex items-center justify-center text-[20px] text-[#603F8B] border border-[#603F8B] rounded-md"
                     >
                         Sign up
                     </Link>
@@ -61,16 +60,16 @@ const Nav = () => {
 
                 <button
                     onClick={() => setOpen(!open)}
-                    className="lg:hidden"
+                    className="xl:hidden text-[#686868] cursor-pointer"
                 >
-                    {open ? <BiX size={24} /> : <HiBars3CenterLeft size={24} />}
+                    {open ? <BiX size={28} /> : <HiBars3CenterLeft size={28} />}
                 </button>
             </div>
 
             {open && (
-                <div className='bg-black/60 h-screen w-full'>
-                    <div className="lg:hidden bg-white font-navbar pb-7">
-                        <div className="flex flex-col gap-4 items-center p-4">
+                <div className="xl:hidden fixed w-full h-[calc(100%-90px)] bg-black/60 z-40">
+                    <div className="bg-white  pt-3 pb-10">
+                        <div className="flex flex-col items-center gap-4">
                             {navLinks.map((link) => (
                                 <NavItem
                                     key={link.href}
@@ -80,13 +79,24 @@ const Nav = () => {
                                 />
                             ))}
 
-                            <Link href="/login">Login</Link>
-                            <Link href="/signup">Sign up</Link>
+                            <Link
+                                href="/login"
+                                className="px-13 h-12 flex items-center justify-center text-[16px] text-[#1E1E4B]"
+                            >
+                                Login
+                            </Link>
+
+                            <Link
+                                href="/signup"
+                                className="px-13 h-12 flex items-center justify-center text-[16px] text-[#603F8B] border border-[#603F8B] rounded-md"
+                            >
+                                Sign up
+                            </Link>
                         </div>
                     </div>
                 </div>
             )}
-        </div>
+        </header>
     )
 }
 

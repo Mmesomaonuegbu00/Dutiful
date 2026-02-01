@@ -18,7 +18,7 @@ const OtpVerification = () => {
     }
 
     return (
-        <div className="min-h-screen  px-6 pt-[20vh] font-navbar">
+        <div className="min-h-screen  px-6 pt-[20vh] ">
             <div className="max-w-md mx-auto text-center">
 
                 <div className="flex justify-center gap-3 mb-6">
@@ -30,23 +30,23 @@ const OtpVerification = () => {
                             maxLength={1}
                             value={digit}
                             onChange={(e) => handleChange(e.target.value, index)}
-                            className="w-14 h-14 text-center text-lg bg-[#E7EAF1] border border-[#B6B6E5] rounded-md focus:outline-none focus:border-[#603F8B]"
+                            className="w-18.75 h-18.75 text-center text-lg bg-[#F3F3F3] border border-[#B6B6E5] rounded-md focus:outline-none focus:border-[#603F8B]"
                         />
                     ))}
                 </div>
 
-                <p className="text-sm font-navbar mb-6 max-w-sm">
+                <p className="text-base text-[#686868] mb-6 max-w-sm">
                     Enter OTP code that was sent to your email,{' '}
-                    <span className="font-medium">segunsolaru@gmail.com</span>.
+                    <span className="font-semibold">segunsolaru@gmail.com</span>.
                 </p>
 
                 <Link href="/reset-password">
-                    <button className="w-full bg-[#603F8B] text-white py-3 rounded-md font-medium text-sm hover:opacity-90 transition">
+                    <button className="w-full h-16 cursor-pointer bg-[#532F82] text-white text-[18px] font-semibold rounded-md flex items-center justify-center shadow-[2px_8px_8px_#565656]">
                         Confirm OTP
                     </button>
                 </Link>
 
-                <p className="text-sm mt-6">
+                <p className="text-base mt-6 text-[#A3B1BF]">
                     Didn’t get a code?{' '}
                     <button className="text-[#603F8B] font-medium">
                         Resend

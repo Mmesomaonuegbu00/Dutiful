@@ -21,15 +21,15 @@ interface PricingComparisonProps {
 
 const PricingComparison = ({ features, plans }: PricingComparisonProps) => {
     return (
-        <div className="overflow-x-auto py-16 px-6 bg-gray-50">
+        <div className="overflow-x-auto py-16 px-6 max-w-360 mx-auto">
             <h2 className="text-2xl font-medium mb-3 text-gray-800">Features Overview</h2>
             <div className="min-w-225">
                 <div className="grid grid-cols-[2fr_repeat(3,1fr)] gap-4 mb-6 items-center">
-                    <div className="font-medium text-gray-700">Features & Services</div>
+                    <div className="font-medium -[#656565">Features & Services</div>
                     {plans.map((plan, idx) => (
                         <div key={idx} className="flex flex-col items-center gap-3">
-                            <div className="text-base text-gray-800">{plan.title}</div>
-                            <button className="bg-[#532F82] text-white py-2 px-4 rounded-md hover:bg-[#41236c] transition text-base">
+                            <div className="text-base text-black text-[22px] font-medium">{plan.title}</div>
+                            <button className="w-full h-16 bg-[#532F82] text-white text-[18px] font-semibold rounded-md flex items-center justify-center shadow-[2px_8px_8px_#565656]">
                                 {plan.getStartedLabel || 'Get Started'}
                             </button>
                         </div>
@@ -39,13 +39,14 @@ const PricingComparison = ({ features, plans }: PricingComparisonProps) => {
                 {features.map((feature, rowIdx) => (
                     <div
                         key={rowIdx}
-                        className="grid grid-cols-[2fr_repeat(3,1fr)] gap-4 py-2 items-center border-b border-gray-100 last:border-b-0"
+                        className={`grid grid-cols-[2fr_repeat(3,1fr)] gap-4 p-1.5 md:max-h-14.5 font-[20px] items-center border-b border-gray-100 last:border-b-0 ${
+                            rowIdx % 2 === 0 ? 'bg-white' : 'bg-none'
+                        }`}
                     >
                         <div className="text-gray-700">{feature}</div>
-
                         {plans.map((plan, colIdx) => {
                             let cellContent: React.ReactNode = (
-                                <BiCheck className="text-green-600 mx-auto" size={20} />
+                                <BiCheck className="text-[#AC64CE] mx-auto" size={20} />
                             )
 
                             if (feature === 'Number of business listings' && plan.businessListing !== undefined) {
@@ -66,25 +67,24 @@ const PricingComparison = ({ features, plans }: PricingComparisonProps) => {
                             if (feature === 'Number of profile views') {
                                 cellContent =
                                     colIdx === 2 ? (
-                                        <BiCheck className="text-green-600 mx-auto" size={20} />
+                                        <BiCheck className="text-[#AC64CE] mx-auto" size={20} />
                                     ) : (
                                         <BiX className="text-gray-300 mx-auto" size={22} />
                                     )
                             }
 
                             if (feature === 'Verified badge') {
-                                if (colIdx === 1) {
-                                    cellContent = <BiCheck className="text-green-600 mx-auto" size={20} />
-                                } else if (colIdx === 2) {
-                                    cellContent = <BiCheck className="text-green-600 mx-auto" size={20} />
+                                if (colIdx === 1 || colIdx === 2) {
+                                    cellContent = <BiCheck className="text-[#AC64CE] mx-auto" size={20} />
                                 } else {
                                     cellContent = <BiX className="text-gray-300 mx-auto" size={22} />
                                 }
                             }
+
                             if (feature === 'Latest offers' || feature === 'Accept & sell appointments') {
                                 cellContent =
                                     colIdx === 1 ? (
-                                        <BiCheck className="text-green-600 mx-auto" size={20} />
+                                        <BiCheck className="text-[#AC64CE] mx-auto" size={20} />
                                     ) : (
                                         <BiX className="text-gray-300 mx-auto" size={22} />
                                     )
@@ -93,7 +93,7 @@ const PricingComparison = ({ features, plans }: PricingComparisonProps) => {
                             if (feature === '24/7 support') {
                                 cellContent =
                                     colIdx === 2 ? (
-                                        <BiCheck className="text-green-600 mx-auto" size={20} />
+                                        <BiCheck className="text-[#AC64CE] mx-auto" size={20} />
                                     ) : (
                                         <BiX className="text-gray-300 mx-auto" size={22} />
                                     )
@@ -118,11 +118,11 @@ const PricingComparison = ({ features, plans }: PricingComparisonProps) => {
                                     'Bookmarks',
                                 ].includes(feature)
                             ) {
-                                cellContent = <BiCheck className="text-green-600 mx-auto" size={20} />
+                                cellContent = <BiCheck className="text-[#AC64CE] mx-auto" size={20} />
                             }
 
                             return (
-                                <div key={colIdx} className="flex items-center justify-center text-gray-800">
+                                <div key={colIdx} className="flex items-center justify-center texT-black">
                                     {cellContent}
                                 </div>
                             )

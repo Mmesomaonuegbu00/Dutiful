@@ -4,7 +4,7 @@ import React from 'react'
 import PricingCard from '@/Components/PricingCard'
 import PricingComparison from '@/Components/PricingComparison'
 
-// Feature list for the comparison table
+
 const featuresList = [
     'Access dashboard',
     'Number of business listings',
@@ -115,7 +115,7 @@ const comparisonPlans = [
     {
         title: 'Standard',
         getStartedLabel: 'Get Started',
-        businessListing: 5,
+        businessListing: 6,
         productsOrServices: 6,
         images: 4,
         otherFeatures: [true, true, true],
@@ -124,7 +124,7 @@ const comparisonPlans = [
         title: 'Premium',
         getStartedLabel: 'Get Started',
         businessListing: 10,
-        productsOrServices: 6,
+        productsOrServices: 10,
         images: 6,
         otherFeatures: [true, true, true, true],
     },
@@ -132,26 +132,29 @@ const comparisonPlans = [
 
 const PricingPage = () => {
     return (
-        <div className="bg-gray-50 py-16 px-6 font-navbar">
-            <div className='xl:w-[75%] w-[90%] mx-auto pt-[10vh]'>
-                <div className='mb-6 max-w-2xl mx-auto text-center space-y-4'>
-                    <h2 className="text-2xl md:text-3xl font-semibold text-center text-gray-800">Plans to Suit Your Business Budget</h2>
-                    <p className=''>Our fully organized plans deliver valuable content that showcases your services and skills, drives Lead, covers all features, and gives customers a clear idea to be able to choose your services.</p>
+        <div className="w-full flex justify-center pt-32 lg:pt-22.5">
+            <div className='w-full mx-auto'>
+                <div className='mb-6 max-w-4xl mx-auto text-center space-y-4 pt-8 px-6'>
+                    <h1 className="text-[1E1E4B] text-2xl md:text-3xl lg:text-[36px]  font-semibold font-heading leading-tight">Plans to Suit Your Business Budget</h1>
+                    <p className="text-[#656565] text-base lg:text-[20px]  leading-relaxed">Our fully organized plans deliver valuable content that showcases your services and skills, drives Lead, covers all features, and gives customers a clear idea to be able to choose your services.</p>
                 </div>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8  mx-auto pt-[5vh]">
-                    {cardPlans.map((plan, idx) => (
-                        <PricingCard
-                            key={idx}
-                            title={plan.title}
-                            price={plan.price}
-                            isFree={plan.isFree}
-                            features={plan.features}
-                        />
-                    ))}
+                <div className='bg-[#532F82] p-6'>
+                    <div className="grid grid-cols-1 lg:grid-cols-3 gap-8  mx-auto pt-[5vh] max-w-360 ">
+                        {cardPlans.map((plan, idx) => (
+                            <PricingCard
+                                key={idx}
+                                title={plan.title}
+                                price={plan.price}
+                                isFree={plan.isFree}
+                                features={plan.features}
+                            />
+                        ))}
+                    </div>
                 </div>
 
-
-                <PricingComparison features={featuresList} plans={comparisonPlans} />
+                <div className='bg-[#FCFAFF]'>
+                    <PricingComparison features={featuresList} plans={comparisonPlans} />
+                </div>
             </div>
         </div>
     )

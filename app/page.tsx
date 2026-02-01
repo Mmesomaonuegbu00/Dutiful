@@ -1,18 +1,18 @@
-import Appoint from '@/Components/Appointments/Appoint'
-import Discover from '@/Components/Discover/Discover'
-import Hero from '@/Components/Hero/Hero'
-import Review from '@/Components/Reviews/Review'
+import Appoint from '@/Components/LandindPage/Appointments/Appoint'
+import Discover from '@/Components/LandindPage/Discover/Discover'
+import Hero from '@/Components/LandindPage/Hero/Hero'
+import Review from '@/Components/LandindPage/Reviews/Review'
 import React from 'react'
 
 const Home = () => {
   return (
-    <div>
-      <Hero/>
-      <Review/>
-      <Discover/>
-      <Appoint/>
-      
-    </div>
+    <main>
+      <Hero />
+      <Review />
+      <Discover />
+      <Appoint />
+
+    </main>
   )
 }
 
