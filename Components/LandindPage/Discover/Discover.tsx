@@ -8,13 +8,13 @@ const Discover = () => {
             <div className="max-w-360 w-full mx-auto flex items-center px-6 lg:h-216.5">
                 <div className="flex flex-col lg:flex-row w-full items-center gap-19.75 bg-[#FCFAFF] rounded-3xl py-8 lg:py-20 px-6 lg:px-8">
 
-                    <div className="hidden xl:flex justify-center w-159.5 h-155.25 relative bg-[#532F82] mt-20 ml-10 mb-20 rounded-2xl">
+                    <div className="hidden xl:flex justify-center w-159.5 h-155.25 relative bg-[#532F82] mt-20 ml-10 mb-20 rounded-2xl overflow-visible">
                         <Image
-                            src="/discover.png"
+                            src="/discover.svg"
                             alt="Discover Illustration"
                             width={1000}
                             height={1000}
-                            className="absolute -top-15 z-10"
+                            className="absolute -top-25 -right-18 z-10 h-193 w-200 object-cover"
                         />
                     </div>
 

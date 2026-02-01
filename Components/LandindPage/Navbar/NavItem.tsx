@@ -31,7 +31,7 @@ const NavItem = ({ href, label, icon }: NavItemProps) => {
                 <Image
                     src="/search.png"
                     alt="Search"
-                    width={24}
+                    width={28}
                     height={24}
                 />
             )}

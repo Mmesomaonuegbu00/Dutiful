@@ -52,7 +52,7 @@ const Nav = () => {
 
                     <Link
                         href="/signup"
-                        className="px-13 h-12 flex items-center justify-center text-[20px] text-[#603F8B] border border-[#603F8B] rounded-md"
+                        className="px-13 h-12 flex items-center justify-center text-[20px] text-[#603F8B] border-2 border-[#603F8B] rounded-md"
                     >
                         Sign up
                     </Link>
