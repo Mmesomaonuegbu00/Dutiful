@@ -14,7 +14,7 @@ const SignUpForm = () => {
     <div className="min-h-screen px-6 pt-[16vh] md:pt-[20vh] mb-20">
       <div className="w-full max-w-121.5 mx-auto">
         <p className="text-[16px] text-[#686868] mb-2">
-          Sign up free
+          Sign up free!
         </p>
 
         <h1 className="text-2xl md:text-[36px] font-heading font-semibold text-gray-800 mb-10">
@@ -25,7 +25,7 @@ const SignUpForm = () => {
           <button
             type="button"
             onClick={() => setAccountType('user')}
-            className={`relative flex items-center gap-2 border rounded-lg px-4 py-3 w-full
+            className={`relative flex items-center gap-2 border rounded-lg px-4 py-3 w-full max-h-18 md:h-18
               ${accountType === 'user'
                 ? 'border-[#603F8B] text-[#603F8B]'
                 : 'border-gray-300 text-gray-400'
@@ -48,7 +48,7 @@ const SignUpForm = () => {
           <button
             type="button"
             onClick={() => setAccountType('provider')}
-            className={`relative flex items-center gap-2 border rounded-lg px-4 py-3 w-full
+            className={`relative flex items-center gap-2 border rounded-lg px-4 py-3 w-full max-h-18 md:h-18
               ${accountType === 'provider'
                 ? 'border-[#603F8B] text-[#603F8B]'
                 : 'border-gray-300 text-gray-400'
@@ -76,7 +76,7 @@ const SignUpForm = () => {
             </label>
             <input
               type="text"
-              className="w-full bg-[#F8FAFD] border border-[#E7EAF1] rounded-md px-4 py-2 focus:outline-none focus:border-[#603F8B]"
+              className="w-full bg-[#F8FAFD] max-h-14 md:h-14 border border-[#E7EAF1] rounded-md px-4 py-2 focus:outline-none focus:border-[#603F8B]"
             />
           </div>
 
@@ -86,7 +86,7 @@ const SignUpForm = () => {
             </label>
             <input
               type="email"
-              className="w-full bg-[#F8FAFD] border border-[#E7EAF1] rounded-md px-4 py-2 focus:outline-none focus:border-[#603F8B]"
+              className="w-full bg-[#F8FAFD] max-h-14 md:h-14 border border-[#E7EAF1] rounded-md px-4 py-2 focus:outline-none focus:border-[#603F8B]"
             />
           </div>
 
@@ -96,7 +96,7 @@ const SignUpForm = () => {
             </label>
             <input
               type="tel"
-              className="w-full bg-[#F8FAFD] border border-[#E7EAF1] rounded-md px-4 py-2 focus:outline-none focus:border-[#603F8B]"
+              className="w-full bg-[#F8FAFD] max-h-14 md:h-14 border border-[#E7EAF1] rounded-md px-4 py-2 focus:outline-none focus:border-[#603F8B]"
             />
           </div>
 
@@ -107,7 +107,7 @@ const SignUpForm = () => {
             <div className="relative">
               <input
                 type={showPassword ? 'text' : 'password'}
-                className="w-full bg-[#F8FAFD] border border-[#E7EAF1] rounded-md px-4 py-2 pr-10 focus:outline-none focus:border-[#603F8B]"
+                className="w-full bg-[#F8FAFD] max-h-14 md:h-14 border border-[#E7EAF1] rounded-md px-4 py-2 pr-10 focus:outline-none focus:border-[#603F8B]"
               />
               <button
                 type="button"
@@ -130,7 +130,7 @@ const SignUpForm = () => {
             <div className="relative">
               <input
                 type={showRePassword ? 'text' : 'password'}
-                className="w-full bg-[#F8FAFD] border border-[#E7EAF1] rounded-md px-4 py-2 pr-10 focus:outline-none focus:border-[#603F8B]"
+                className="w-full bg-[#F8FAFD] max-h-14 md:h-14 border border-[#E7EAF1] rounded-md px-4 py-2 pr-10 focus:outline-none focus:border-[#603F8B]"
               />
               <button
                 type="button"

@@ -24,7 +24,7 @@ const LoginForm = () => {
             </label>
             <input
               type="email"
-              className="w-full bg-[#F8FAFD] border border-[#E7EAF1] rounded-md px-4 py-2 focus:outline-none focus:border-[#603F8B]"
+              className="w-full bg-[#F8FAFD] border max-h-14 md:h-14 border-[#E7EAF1] rounded-md px-4 py-2 focus:outline-none focus:border-[#603F8B]"
             />
           </div>
 
@@ -36,7 +36,7 @@ const LoginForm = () => {
             <div className="relative">
               <input
                 type={showPassword ? 'text' : 'password'}
-                className="w-full bg-[#F8FAFD] border border-[#E7EAF1] rounded-md px-4 py-2 pr-10 focus:outline-none focus:border-[#603F8B]"
+                className="w-full bg-[#F8FAFD] max-h-14 md:h-14 border border-[#E7EAF1] rounded-md px-4 py-2 pr-10 focus:outline-none focus:border-[#603F8B]"
               />
 
               <button

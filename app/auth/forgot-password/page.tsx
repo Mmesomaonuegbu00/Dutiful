@@ -3,11 +3,21 @@
 import React from 'react'
 import Link from 'next/link'
 import { FiMail } from 'react-icons/fi'
+import { FiArrowLeft } from 'react-icons/fi'
 
 const ForgotPassword = () => {
   return (
     <div className="min-h-screen px-6 pt-[20vh]">
       <div className="w-full max-w-121.5 mx-auto">
+
+        <button
+          type="button"
+          className="mb-8 w-8 h-8 flex items-center justify-center rounded-full border border-[#E5E7EA] text-[#603F8B]"
+          onClick={() => window.history.back()}
+        >
+          <FiArrowLeft />
+        </button>
+
         <h1 className="text-2xl md:text-[36px] font-heading font-semibold text-gray-800 mb-2">
           Forgot password
         </h1>
@@ -25,7 +35,7 @@ const ForgotPassword = () => {
             <div className="relative">
               <input
                 type="email"
-                className="w-full bg-[#F8FAFD] border border-[#E7EAF1] rounded-md px-4 py-2 pr-10 focus:outline-none focus:border-[#603F8B]"
+                className="w-full bg-[#F8FAFD] border max-h-14 md:h-14 border-[#E7EAF1] rounded-md px-4 py-2 pr-10 focus:outline-none focus:border-[#603F8B]"
               />
               <span className="absolute right-3 top-1/2 -translate-y-1/2 text-[#A16AE8]">
                 <FiMail />
