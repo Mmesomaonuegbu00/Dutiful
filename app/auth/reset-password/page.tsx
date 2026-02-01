@@ -28,7 +28,7 @@ const ResetPassword = () => {
             <div className="relative">
               <input
                 type={showPassword ? 'text' : 'password'}
-                className="w-full bg-[#F8FAFD] border max-h-14 md:h-14 border-[#E7EAF1] rounded-md px-4 py-2 pr-10 focus:outline-none focus:border-[#603F8B]"
+                className="w-full bg-[#F8FAFD] border max-h-14 h-14 border-[#E7EAF1] rounded-md px-4 py-2 pr-10 focus:outline-none focus:border-[#603F8B]"
               />
               <button
                 type="button"
@@ -52,7 +52,7 @@ const ResetPassword = () => {
             <div className="relative">
               <input
                 type={showRePassword ? 'text' : 'password'}
-                className="w-full bg-[#F8FAFD] max-h-14 md:h-14 border border-[#E7EAF1] rounded-md px-4 py-2 pr-10 focus:outline-none focus:border-[#603F8B]"
+                className="w-full bg-[#F8FAFD] max-h-14 h-14 border border-[#E7EAF1] rounded-md px-4 py-2 pr-10 focus:outline-none focus:border-[#603F8B]"
               />
               <button
                 type="button"

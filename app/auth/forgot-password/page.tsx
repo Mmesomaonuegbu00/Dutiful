@@ -35,7 +35,7 @@ const ForgotPassword = () => {
             <div className="relative">
               <input
                 type="email"
-                className="w-full bg-[#F8FAFD] border max-h-14 md:h-14 border-[#E7EAF1] rounded-md px-4 py-2 pr-10 focus:outline-none focus:border-[#603F8B]"
+                className="w-full bg-[#F8FAFD] border max-h-14 h-14 border-[#E7EAF1] rounded-md px-4 py-2 pr-10 focus:outline-none focus:border-[#603F8B]"
               />
               <span className="absolute right-3 top-1/2 -translate-y-1/2 text-[#A16AE8]">
                 <FiMail />
