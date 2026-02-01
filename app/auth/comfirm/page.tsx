@@ -15,7 +15,7 @@ const ConfirmationPage = ({
   imageSrc = '/comfirm.svg'
 }: ConfirmationPageProps) => {
   return (
-    <div className="min-h-screen px-6 pt-[20vh]">
+    <div className="min-h-screen px-6 pt-[16vh] md:pt-[20vh] ">
       <div className="w-full max-w-121.5 mx-auto text-center">
         <div className="relative w-32.5 h-34.75 mx-auto mb-6 rounded-full bg-[#F8F3FF] flex items-center justify-center">
           <Image
@@ -36,7 +36,7 @@ const ConfirmationPage = ({
           <span className="font-semibold">{email}</span>. Check your email to get the code.
         </p>
 
-        <Link href="/otp-verification">
+        <Link href="/auth/otp-verification">
           <button className="w-full h-16 bg-[#532F82] text-white text-[18px] font-semibold cursor-pointer rounded-md flex items-center justify-center shadow-[2px_8px_8px_#565656]">
             Next
           </button>

@@ -33,7 +33,7 @@ const ForgotPassword = () => {
             </div>
           </div>
 
-          <Link href="/comfirm">
+          <Link href="/auth/comfirm">
             <button
               type="button"
               className="w-full h-16 bg-[#532F82] text-white text-[18px] font-semibold rounded-md flex items-center justify-center shadow-[2px_8px_8px_#565656] cursor-pointer"
@@ -45,7 +45,7 @@ const ForgotPassword = () => {
 
         <p className="text-base mt-6 text-center text-[#A3B1BF]">
           or{' '}
-          <Link href="/login" className="text-[#A16AE8] text-base font-medium cursor-pointer">
+          <Link href="/auth/login" className="text-[#A16AE8] text-base font-medium cursor-pointer">
             Login
           </Link>
         </p>

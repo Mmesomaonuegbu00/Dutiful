@@ -8,7 +8,7 @@ const LoginForm = () => {
   const [showPassword, setShowPassword] = useState(false)
 
   return (
-    <div className="min-h-screen px-6 pt-32 lg:pt-22.5">
+    <div className="min-h-screen px-6 pt-[16vh] md:pt-[20vh] ">
       <div className="w-full max-w-121.5 mx-auto">
         <p className="text-[16px] text-[#686868] mb-2">
           Jump right back in
@@ -55,7 +55,7 @@ const LoginForm = () => {
 
           <div className="flex justify-end cursor-pointer">
             <Link
-              href="/forgot-password"
+              href="/auth/forgot-password"
               className="text-sm text-[#A16AE8]"
             >
               Forgot password?
@@ -72,7 +72,7 @@ const LoginForm = () => {
 
         <p className="text-sm mt-6 text-center text-[#A3B1BF]">
           Don&apos;t have an account?{' '}
-          <Link href="/signup" className="text-[#A16AE8] text-base font-medium cursor-pointer">
+          <Link href="/auth/signup" className="text-[#A16AE8] text-base font-medium cursor-pointer">
             Sign up
           </Link>
         </p>

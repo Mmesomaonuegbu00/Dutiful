@@ -44,14 +44,14 @@ const Nav = () => {
 
                 <div className="hidden xl:flex items-center gap-2.5">
                     <Link
-                        href="/login"
+                        href="/auth/login"
                         className="px-13 h-12 flex items-center justify-center text-[20px] text-[#1E1E4B]"
                     >
                         Login
                     </Link>
 
                     <Link
-                        href="/signup"
+                        href="/auth/signup"
                         className="px-13 h-12 flex items-center justify-center text-[20px] text-[#603F8B] border-2 border-[#603F8B] rounded-md"
                     >
                         Sign up
@@ -80,14 +80,14 @@ const Nav = () => {
                             ))}
 
                             <Link
-                                href="/login"
+                                href="/auth/login"
                                 className="px-13 h-12 flex items-center justify-center text-[16px] text-[#1E1E4B]"
                             >
                                 Login
                             </Link>
 
                             <Link
-                                href="/signup"
+                                href="/auth/signup"
                                 className="px-13 h-12 flex items-center justify-center text-[16px] text-[#603F8B] border border-[#603F8B] rounded-md"
                             >
                                 Sign up

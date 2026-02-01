@@ -1,9 +1,9 @@
+/* eslint-disable @next/next/no-img-element */
 'use client'
-
 import React, { useState } from 'react'
-import { BiUser, BiHome, BiCheck } from 'react-icons/bi'
 import { FiEye, FiEyeOff } from 'react-icons/fi'
 import Link from 'next/link'
+import { BiCheck } from 'react-icons/bi'
 
 const SignUpForm = () => {
   const [accountType, setAccountType] = useState<'user' | 'provider'>('user')
@@ -31,12 +31,16 @@ const SignUpForm = () => {
                 : 'border-gray-300 text-gray-400'
               }`}
           >
-            <BiUser size={20} />
+            <img
+              src={accountType === 'user' ? '/profile.svg' : '/profile1.svg'}
+              alt="User Icon"
+              className="w-5 h-5"
+            />
             <span className="text-sm font-medium">Regular User</span>
 
             {accountType === 'user' && (
               <span className="absolute -top-2 -right-2 bg-[#603F8B] text-white rounded-full p-1">
-                <BiCheck size={14} />
+                <BiCheck className="w-3.5 h-3.5" />
               </span>
             )}
           </button>
@@ -50,12 +54,16 @@ const SignUpForm = () => {
                 : 'border-gray-300 text-gray-400'
               }`}
           >
-            <BiHome size={20} />
+            <img
+              src={accountType === 'provider' ? '/clarity1.svg' : '/clarity.svg'}
+              alt="Provider Icon"
+              className="w-5 h-5"
+            />
             <span className="text-sm font-medium">Service Provider</span>
 
             {accountType === 'provider' && (
               <span className="absolute -top-2 -right-2 bg-[#603F8B] text-white rounded-full p-1">
-                <BiCheck size={14} />
+                <BiCheck className="w-3.5 h-3.5" />
               </span>
             )}
           </button>
@@ -96,7 +104,6 @@ const SignUpForm = () => {
             <label className="block text-[16px] mb-1 text-[#603F8B]">
               Password
             </label>
-
             <div className="relative">
               <input
                 type={showPassword ? 'text' : 'password'}
@@ -120,7 +127,6 @@ const SignUpForm = () => {
             <label className="block text-[16px] mb-1 text-[#603F8B]">
               Re-Password
             </label>
-
             <div className="relative">
               <input
                 type={showRePassword ? 'text' : 'password'}
@@ -141,9 +147,9 @@ const SignUpForm = () => {
           </div>
 
           <div className="flex items-center gap-2 text-sm">
-            <input type="checkbox" />
+            <input type="checkbox" className="w-4 h-4 text-[#A16AE8] border-[#E7EAF1] rounded focus:ring-[#A16AE8]" />
             <span>
-              I agree to the <span className="text-[#603F8B]">terms & conditions</span>
+              I agree to the <span className="text-[#A16AE8]">terms & conditions</span>
             </span>
           </div>
 
@@ -157,7 +163,7 @@ const SignUpForm = () => {
 
         <p className="text-sm mt-6 text-center text-[#A3B1BF]">
           Already have an account?{' '}
-          <Link href="/login" className="text-[#A16AE8] text-base font-medium">
+          <Link href="/auth/login" className="text-[#A16AE8] text-base font-medium">
             Login
           </Link>
         </p>

@@ -18,7 +18,7 @@ const OtpVerification = () => {
     }
 
     return (
-        <div className="min-h-screen  px-6 pt-[20vh] ">
+        <div className="min-h-screen  px-6 pt-[16vh] md:pt-[20vh]">
             <div className="max-w-md mx-auto text-center">
 
                 <div className="flex justify-center gap-3 mb-6">
@@ -40,7 +40,7 @@ const OtpVerification = () => {
                     <span className="font-semibold">segunsolaru@gmail.com</span>.
                 </p>
 
-                <Link href="/reset-password">
+                <Link href="/auth/reset-password">
                     <button className="w-full h-16 cursor-pointer bg-[#532F82] text-white text-[18px] font-semibold rounded-md flex items-center justify-center shadow-[2px_8px_8px_#565656]">
                         Confirm OTP
                     </button>

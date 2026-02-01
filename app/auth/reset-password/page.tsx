@@ -9,7 +9,7 @@ const ResetPassword = () => {
   const [showRePassword, setShowRePassword] = useState(false)
 
   return (
-    <div className="min-h-screen px-6 pt-[20vh]">
+    <div className="min-h-screen px-6 pt-[16vh] md:pt-[20vh]">
       <div className="w-full max-w-121.5 mx-auto">
         <h1 className="text-2xl md:text-[36px] font-heading font-bold text-gray-800 mb-2">
           Reset password
@@ -79,7 +79,7 @@ const ResetPassword = () => {
         <p className="text-sm mt-6 text-center text-[#A3B1BF]">
           or{' '}
           <Link
-            href="/signup"
+            href="/auth/signup"
             className="text-[#A16AE8] text-base font-medium cursor-pointer"
           >
             Create account
