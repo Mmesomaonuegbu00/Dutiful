@@ -29,7 +29,7 @@ const PricingComparison = ({ features, plans }: PricingComparisonProps) => {
                     {plans.map((plan, idx) => (
                         <div key={idx} className="flex flex-col items-center gap-3">
                             <div className="text-base text-black text-[22px] font-medium">{plan.title}</div>
-                            <button className="w-full h-16 bg-[#532F82] text-white text-[18px] font-semibold rounded-md flex items-center justify-center shadow-[2px_8px_8px_#565656]">
+                            <button className="w-full h-16 bg-[#532F82] text-white text-[18px] font-medium rounded-md flex items-center justify-center shadow-[2px_8px_8px_#565656]">
                                 {plan.getStartedLabel || 'Get Started'}
                             </button>
                         </div>

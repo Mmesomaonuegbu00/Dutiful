@@ -149,7 +149,7 @@ const SignUpForm = () => {
 
           <button
             type="submit"
-            className="w-full h-16 bg-[#532F82] text-white text-[18px] font-semibold rounded-md flex items-center justify-center shadow-[2px_8px_8px_#565656]"
+            className="w-full h-16 bg-[#532F82] text-white text-[18px] font-medium rounded-md flex items-center justify-center shadow-[2px_8px_8px_#565656]"
           >
             Sign up
           </button>

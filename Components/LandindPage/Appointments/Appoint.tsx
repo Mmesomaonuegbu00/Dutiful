@@ -1,4 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
+ 
 import Image from 'next/image'
 import React from 'react'
 
@@ -15,7 +16,7 @@ const Appoint = () => {
               <Image
                 src="/booked.png"
                 alt="booked"
-                width={250} 
+                width={250}
                 height={180}
                 className="w-auto h-auto"
               />
@@ -23,14 +24,19 @@ const Appoint = () => {
               <Image
                 src="/calendar.png"
                 alt="calendar"
-                width={250} 
+                width={280}
                 height={180}
                 className="w-auto h-auto"
               />
 
             </div>
-
-            <img src="/time.png" alt="time" className="w-auto hidden sm:block" />
+            <img
+              src="/time.png"
+              alt="time"
+              width={130}
+              height={100}
+              className="w-auto h-auto xl:block hidden"
+            />
           </div>
 
           <div className="flex flex-col gap-4 lg:max-w-138 pb-6">

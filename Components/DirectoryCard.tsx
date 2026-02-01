@@ -10,7 +10,7 @@ interface InfoCardProps {
 
 const InfoCard = ({ title, desc, icon }: InfoCardProps) => {
   return (
-    <div className="bg-white max-w-103.5 lg:h-49.25  rounded-2xl p-3 shadow-md flex flex-col items-center gap-6 transition hover:shadow-lg text-center">
+    <div className="bg-white max-w-103.5 lg:h-45.25  rounded-2xl p-3 shadow-md flex flex-col items-center gap-6 transition hover:shadow-lg text-center">
 
       <div className="flex items-center justify-center gap-1.5">
         {icon && (

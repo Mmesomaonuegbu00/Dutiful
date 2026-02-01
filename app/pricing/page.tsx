@@ -134,7 +134,7 @@ const PricingPage = () => {
     return (
         <div className="w-full flex justify-center pt-32 lg:pt-22.5">
             <div className='w-full mx-auto'>
-                <div className='mb-6 max-w-4xl mx-auto text-center space-y-4 pt-8 px-6'>
+                <div className='mb-6 max-w-[888PX] mx-auto text-center space-y-4 pt-8 px-6'>
                     <h1 className="text-[1E1E4B] text-2xl md:text-3xl lg:text-[36px]  font-semibold font-heading leading-tight">Plans to Suit Your Business Budget</h1>
                     <p className="text-[#656565] text-base lg:text-[20px]  leading-relaxed">Our fully organized plans deliver valuable content that showcases your services and skills, drives Lead, covers all features, and gives customers a clear idea to be able to choose your services.</p>
                 </div>
