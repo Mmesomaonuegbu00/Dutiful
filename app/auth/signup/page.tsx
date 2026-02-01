@@ -32,7 +32,7 @@ const SignUpForm = () => {
               }`}
           >
             <img
-              src={accountType === 'user' ? '/profile.svg' : '/profile1.svg'}
+              src={accountType === 'user' ? '/user.svg' : '/user1.svg'}
               alt="User Icon"
               className="w-5 h-5"
             />
